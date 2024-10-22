@@ -11,6 +11,7 @@ dependencies = [
     "networkx>=3.4.1",
     "pandas>=2.2.3",
     "pip>=24.2",
+    "pyarrow>=17.0.0",
     "setuptools>=75.2.0",
 ]
 classifiers = [
