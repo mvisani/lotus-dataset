@@ -1,0 +1,14 @@
+[project]
+name = "lotus-dataset"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "compress-json>=1.1.0",
+    "downloaders>=1.0.21",
+    "networkx>=3.4.1",
+    "pandas>=2.2.3",
+    "pip>=24.2",
+    "setuptools>=75.2.0",
+]
