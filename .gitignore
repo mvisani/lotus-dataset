@@ -11,3 +11,10 @@ wheels/
 uv.lock
 .python-version
 .DS_Store
+
+#ignore notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+#ignore data
+downloads/

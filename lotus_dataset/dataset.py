@@ -61,7 +61,7 @@ class Dataset:
         paths: List[str] = []
         urls: List[str] = []
 
-        for objective in settings.download_objectives():
+        for objective in settings.download_objective():
             paths.append(objective.path)
             urls.append(objective.url)
 

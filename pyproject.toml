@@ -19,9 +19,10 @@ classifiers = [
 ]
 
 [tool.uv]
-dev-dependencies = [
-    "lotus-dataset",
-]
+dev-dependencies = ["jupyterlab>=4.2.5", "lotus-dataset"]
 
 [tool.uv.sources]
 lotus-dataset = { workspace = true }
+
+[tool.setuptools.packages.find]
+exclude = ["downloads"]
