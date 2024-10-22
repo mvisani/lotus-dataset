@@ -17,3 +17,11 @@ dependencies = [
 classifiers = [
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
 ]
+
+[tool.uv]
+dev-dependencies = [
+    "lotus-dataset",
+]
+
+[tool.uv.sources]
+lotus-dataset = { workspace = true }
