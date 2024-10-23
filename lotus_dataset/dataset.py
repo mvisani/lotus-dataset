@@ -6,6 +6,8 @@ from downloaders import BaseDownloader
 
 from lotus_dataset.settings.dataset_settings import DatasetSettings
 
+from .wikidata import get_lotus_from_query
+
 
 class Dataset:
     """Class to handle datasets from LOTUS database."""
@@ -76,6 +78,12 @@ class Dataset:
             metadata=settings.into_dict(),
         )
 
-    def get_lotus(self) -> pd.DataFrame:
+    @property
+    def dataframe(self) -> pd.DataFrame:
         """Return the LOTUS dataframe."""
         return self._lotus
+
+    @staticmethod
+    def get_lotus_from_wikidata() -> pd.DataFrame:
+        """Get the LOTUS dataset not from the CSV file but from Wikidata by querying Qlever."""
+        return get_lotus_from_query()

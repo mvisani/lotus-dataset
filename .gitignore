@@ -18,3 +18,4 @@ uv.lock
 
 #ignore data
 downloads/
+cache/

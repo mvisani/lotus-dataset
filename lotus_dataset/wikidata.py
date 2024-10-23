@@ -144,20 +144,3 @@ def get_lotus_from_query() -> pd.DataFrame:
     }"""
     query_output = sparql_to_text(query)
     return text_to_csv(query_output)
-
-
-def download_lotus_frozen_with_metadata() -> pd.DataFrame:
-    """Fetches the LOTUS dataset with metadata from Zenodo."""
-    url = ""
-    path = ""
-    return 0
-
-
-def download_ncbi_taxonomy():
-    return 0
-
-
-# def get_lotus_taxonomy_from_root(
-# wikidata: str,
-# with_subspecies: bool = False,
-# ) -> Dict[str, str]:
