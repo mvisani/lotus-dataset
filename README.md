@@ -8,7 +8,7 @@ pip install git+https://github.com/mvisani/lotus-dataset
 ```
 
 ## Usage
-To download all the files of all the versions of the taxonomy, you can run the following command:
+To download all the files of all the versions of LOTUS, you can run the following command:
 ```bash
 python examples/build_lotus.py all
 ```
